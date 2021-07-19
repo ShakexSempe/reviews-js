@@ -85,3 +85,10 @@ prevBtn.addEventListener("click", () => {
 });
 
 // end of show previous person
+
+// show random person 
+randBtn.addEventListener("click", () => {
+  currentItem = Math.floor(Math.random() * reviews.length);
+  console.log(currentItem);
+  showPerson(currentItem);
+});
