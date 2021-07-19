@@ -73,3 +73,15 @@ nextBtn.addEventListener("click", () => {
   }
   showPerson(currentItem);
 });
+// end of show next person 
+
+// show previous person
+prevBtn.addEventListener("click", () => {
+  currentItem --;
+  if(currentItem < 0) {
+    currentItem = reviews.length -1;
+  }
+  showPerson(currentItem);
+});
+
+// end of show previous person
